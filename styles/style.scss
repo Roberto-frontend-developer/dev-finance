@@ -26,4 +26,6 @@
   align-items: $align;
   flex-direction: $direction;  
 }
-@import 'global.scss'
+
+@import 'global.scss';
+@import 'balance.scss';
