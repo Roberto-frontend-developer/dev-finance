@@ -1,13 +1,7 @@
 /*===== global ======*/
-:root {
-  --dark-blue: #363f5f;
-  --green: #49aa26;
-  --light-green: #3dd705;
-  --red: #e92929;
-}
+
 
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }

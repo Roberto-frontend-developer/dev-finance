@@ -1,0 +1,29 @@
+:root {
+  --dark-blue: #363f5f;
+  --green: #49aa26;
+  --light-green: #3dd705;
+  --red: #e92929;
+
+  --transition-delay: 0.4s;
+  --bg-header: #2D4A22; // Header
+  --bg-color: #f0f2f5; // Fundo e Modal
+  --font-color: #363f5f; // Cards
+  --primary-color: var(--green); // Fundo Card Total
+  --secondary-color: white; // Cards e Fundo da tabela
+  --cancel-color: var(--red);
+}
+
+[data-theme="dark"]{
+  --bg-header: #121214; //Header
+  --bg-color:#202024; //Fundo e Modal
+  --seconddary-color: #1c1c1c;//Cards e Fundo da tabela
+  --font-color:white;// cards
+}
+
+@mixin flex($justify, $align, $direction:row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;  
+}
+@import 'global.scss'

@@ -1,124 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Finança$</title>
 
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <img src="./assets/logo.svg" alt="Logo Dev Finance" />
-    </header>
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 
-    <main class="container">
-      <section id="balance">
-        <h2 class="sr-only">Balanço</h2>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
+    rel="stylesheet">
 
-        <div class="card">
-          <h3>
-            <span> Entradas </span>
-            <img src="./assets/income.svg" alt="Imagem de entradas" />
-          </h3>
-          <p id="incomesDisplay">R$0,00</p>
-        </div>
+  <link rel="stylesheet" href="../styles/style.css">
 
-        <div class="card">
-          <h3>
-            <span> Saídas </span>
-            <img src="./assets/expense.svg" alt="Imagem de saidas" />
-          </h3>
-          <p id="expensesDisplay">R$0,00</p>
-        </div>
+  <title>dev.finance</title>
+</head>
 
-        <div class="card total">
-          <h3>
-            <span> Total </span>
-            <img src="./assets/total.svg" alt="Imagem de total" />
-          </h3>
-          <p id="totalDisplay">R$0,00</p>
+<body>
+  <div class="bank">
+    <main>
+      <section class="hero">
+        <header data-aos="fade-down">
+          <img src="assets/logo.svg" alt="Logo">
+        </header>
+        <div class="hero-items" data-aos="fade-up">
+          <div class="hero-item-1">
+            <p>Nunca foi tão fácil </br>finanças</p>
+          </div>
+          <div class="hero-item-2" data-aos="fade-up">
+            <p> Acesse agora mesmo </br> a sua conta dev.finance</p>
+            <a href="balance">Continue
+              <img src="./assets/arrow.svg" alt="">
+            </a>
+          </div>
         </div>
       </section>
 
-      <section id="transaction">
-        <h2 class="sr-only">Transações</h2>
+      <section class="details">
+        <div class="info" data-aos="fade-rigth">
+          <h3> Seu controle </br> financeiro na palma</br> da sua mão</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate tempora corrupti non laborum esse ea
+            vero at neque dolorem explicabo tenetur, ut sunt ducimus eos architecto distinctio atque repellat deserunt.
+          </p>
+        </div>
+        <div class="ilustration" data-aos="fade-left">
+          <img src="./assets/budgetting.svg" alt="">
+        </div>
+      </section>
+      <section class="depoiment">
+        <h3 data-aos="zoom-out">Transformando a vida de milhões de clientes</h3>
+        <div class="box" data-aos="zoom-out">
+          <img src="./assets/quote.svg" alt="">
+          <p>
+            Sempre utilizei planilhas eletrônicas para realizar o controle das minhas finanças, porém, acabava deixando
+            de lado pela dificuldade de manter tudo atualizado. Com o dev.finance, em 5 minutos consigo atualizar tudo o
+            que aconteceu no dia e tirar insights das visões e gráficos que são gerados.
+          </p>
+          <div class="person">
+            <img src="./assets/user.svg" alt="">
+            <p>Roberto Silva</p>
+          </div>
+          <div class="controls">
+            <button class="back">
+              <img src="./assets/arrow-left.svg" alt="">
+            </button>
+            <button class="next">
+              <img src="./assets/arrow-right.svg" alt="">
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <a href="#" onclick="Modal.open()" class="button new"
-          >+ Nova Transação</a
-        >
-
-        <table id="date_table">
-          <thead>
-            <tr>
-              <th>Descrição</th>
-              <th>Valor</th>
-              <th>Data</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <section class="dark-mode-exibition">
+        <div class="image" data-aos="fade-right">
+          <img src="./assets/mockup.png" alt="Dark Mode">
+        </div>
+        <div class="info" data-aos="fade-left">
+          <h3>Diponível em modo noturno</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aliquid exercitationem at ipsam ullam
+            voluptatum dignissimos quia consequatur tempora animi dolores maiores itaque distinctio blanditiis delectus,
+            officiis, facere libero minima!
+          </p>
+          <ul>
+            <li>
+              <img src="./assets/check.svg" alt="">
+              Economia de Bateria
+            </li>
+          </ul>
+          <li>
+            <img src="./assets/check.svg" alt="">
+            Acessibilidade
+          </li>
+          </ul>
+        </div>
       </section>
     </main>
-
-    <div class="modal-overlay">
-      <div class="modal">
-        <div id="form">
-          <h2>Nova transação</h2>
-          <form action="" onsubmit="Form.submit(event)">
-            <div class="input-grup">
-              <label class="sr-only" for="description">Descrição</label>
-              <input
-                type="text"
-                id="description"
-                name="description"
-                placeholder="descrição"
-              />
-            </div>
-
-            <div class="input-grup">
-              <label class="sr-only" for="amount">Valor</label>
-              <input
-                type="number"
-                step="0.01"
-                id="amount"
-                name="amount"
-                placeholder="0,00"
-              />
-              <small class="help"
-                >use sinal - (negativo) para despesas e , (virgula) para casas
-                decimais.</small
-              >
-            </div>
-
-            <div class="input-group">
-              <label class="sr-only" for="Data">Data</label>
-              <input type="date" id="date" name="data" />
-            </div>
-
-            <div class="input-group actions">
-              <a href="#" onclick="Modal.closed()" class="button cancel"
-                >Cancelar</a
-              >
-              <button>Salvar</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-
     <footer>
-      <p>Dev.Finance$</p>
+      <p>de.finance</p>
+      <ul class="social">
+      </ul>
+      <li>
+        <a href="#"><img src="./assets/instagram.svg" alt="dev finance instagram"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./assets/youtube.svg" alt="dev finance youtube"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./assets/facebook.svg" alt="dev finance facebook"></a>
+      </li>
+      <li>
+        <a href="#"><img src="./assets/twitter.svg" alt="dev finance twitter"></a>
+      </li>
     </footer>
+  </div>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
 
-    <script src="./script.js" defer></script>
-  </body>
 </html>
