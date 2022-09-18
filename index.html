@@ -2,7 +2,6 @@
 <html lang="pt-br">
 
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +12,8 @@
   rel="stylesheet">
   
   <link rel="stylesheet" href="../styles/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   
   <title>dev.finance</title>
 
@@ -27,11 +28,12 @@
         </header>
         <div class="hero-items" data-aos="fade-up">
           <div class="hero-item-1">
-            <p>Nunca foi tão fácil </br>finanças</p>
+            <p>Nunca foi tão fácil </br>controlar suas</br> finanças</p>
           </div>
           <div class="hero-item-2" data-aos="fade-up">
             <p> Acesse agora mesmo </br> a sua conta dev.finance</p>
-            <a href="balance">Continue
+            <a href="balance">
+              Continue
               <img src="./assets/arrow.svg" alt="">
             </a>
           </div>
@@ -86,23 +88,25 @@
             officiis, facere libero minima!
           </p>
           <ul>
+              <li>
+                <img src="./assets/check.svg" alt="">
+                Economia de Bateria
+              </li>
             <li>
               <img src="./assets/check.svg" alt="">
-              Economia de Bateria
+              Saúde Visual 
             </li>
-          </ul>
-          <li>
-            <img src="./assets/check.svg" alt="">
-            Acessibilidade
-          </li>
+            <li>
+              <img src="./assets/check.svg" alt="">
+              Acessibilidade
+            </li>
           </ul>
         </div>
       </section>
     </main>
     <footer>
-      <p>de.finance</p>
-      <ul class="social">
-      </ul>
+      <p>de.finance$</p>
+      <ul class="social">      
       <li>
         <a href="#"><img src="./assets/instagram.svg" alt="dev finance instagram"></a>
       </li>
@@ -115,10 +119,14 @@
       <li>
         <a href="#"><img src="./assets/twitter.svg" alt="dev finance twitter"></a>
       </li>
+    </ul>
     </footer>
   </div>
   <script src="./script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

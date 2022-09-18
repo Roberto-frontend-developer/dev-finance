@@ -276,6 +276,7 @@ header {
   width: 48%;
 }
 
+/* footer  */
 footer {
   text-align: center;
   padding: 4rem 0 2 rem;
@@ -283,6 +284,7 @@ footer {
   opacity: 0.6;
 }
 
+/* responsive  table */
 @media (min-width: 800px) {
   html {
     font-size: 87, 5;
@@ -292,4 +294,288 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
   }
+}
+.bank .hero {
+  background: var(--light-green);
+  height: 100vh;
+  background-image: url("../assets/bg-hero.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.bank header {
+  background: none;
+  padding: 2rem;
+  text-align: left;
+}
+.bank .hero-items {
+  margin: 25vh 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.bank .hero-items .hero-item-1 {
+  display: inline-block;
+  text-align: left;
+}
+.bank .hero-items .hero-item-1 p {
+  color: white;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+.bank .hero-items .hero-item-2 {
+  display: inline-block;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1), 0.25rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+.bank .hero-items .hero-item-2 p {
+  font-size: 1.5rem;
+  padding: -bottom 2 rem;
+}
+.bank .hero-items .hero-item-2 a {
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 10rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  width: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  transition: background 0.3s ease-in-out;
+}
+.bank .hero-items .hero-item-2 a:hover {
+  background: var(--light-green);
+}
+.bank .details {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  overflow: hidden;
+}
+.bank .details .info {
+  color: #404040;
+  flex: 1 1 30rem;
+}
+.bank .details .info h3 {
+  font-size: 3.5rem;
+}
+.bank .details .info p {
+  font-size: 1.25rem;
+}
+.bank .details .ilustration {
+  flex: 1 1 30rem;
+  text-align: right;
+}
+.bank .details .ilustration img {
+  max-width: 40rem;
+}
+.bank .depoiment {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+.bank .depoiment h3 {
+  font-size: 2.25rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.bank .depoiment .box {
+  position: relative;
+  background: var(--light-green);
+  padding: 2rem;
+  border-radius: 2rem;
+  color: white;
+  max-width: 40rem;
+  max-height: 40rem;
+}
+.bank .depoiment .box img {
+  min-width: 3rem;
+}
+.bank .depoiment .box p {
+  font-size: 1.25rem;
+}
+.bank .depoiment .box .person {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 1rem;
+}
+.bank .depoiment .box .person P {
+  padding-left: 1rem;
+}
+.bank .depoiment .box .controls {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.bank .depoiment .box .controls button {
+  background: none;
+  border: none;
+  outline: none;
+}
+.bank .depoiment .box .controls button img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 2rem;
+  height: 2rem;
+}
+.bank .dark-mode-exibition {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #202020;
+  max-width: 100vw;
+  overflow: hidden;
+}
+.bank .dark-mode-exibition .image {
+  flex: 1 1 36rem;
+  text-align: center;
+}
+.bank .dark-mode-exibition .image img {
+  max-width: 40rem;
+}
+.bank .dark-mode-exibition .info {
+  flex: 1 1 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  color: white;
+}
+.bank .dark-mode-exibition .info h3 {
+  font-size: 2.5rem;
+}
+.bank .dark-mode-exibition .info p {
+  opacity: 0.8rem;
+  font-size: 1.25rem;
+}
+.bank .dark-mode-exibition .info ul {
+  list-style: non;
+  padding: 2 rem 0;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.bank footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem;
+}
+.bank footer .social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.bank footer .social li {
+  padding-left: 0.5rem;
+}
+.bank footer .social a {
+  cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .bank .hero {
+    background-position: right center;
+  }
+  .bank .hero .hero-items {
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .bank .hero .hero-items .hero-item-1 {
+    margin-bottom: 2rem;
+  }
+  .bank .hero .hero-items .hero-item-1 p {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .bank .details .info h3 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+  }
+  .bank .dark-mode-exibition .image {
+    display: none;
+    visibility: hidden;
+  }
+}
+.theme-switch-wrapper {
+  align-self: flex-end;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 2.3rem;
+  position: relative;
+  width: 4.3rem;
+}
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.4s;
+  background-color: #ccc;
+  border-radius: 34px;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  left: 0.25rem;
+  bottom: 50%;
+  transform: translateY(50%);
+  height: 1.8rem;
+  width: 1.8rem;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: var(--green);
+}
+
+input:checked + .slider:before {
+  transform: translate(2rem, 50%);
 }/*# sourceMappingURL=style.css.map */

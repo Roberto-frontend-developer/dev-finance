@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="theme-switch-wrapper">
-        <label for="checkbox" class="them-switch">
+        <label for="checkbox" class="theme-switch">
           <input type="checkbox" id="checkbox" />
           <div class="slider round"></div>
         </label>
@@ -58,9 +58,13 @@
       <section id="transaction">
         <h2 class="sr-only">Transações</h2>
 
-        <a href="#" onclick="Modal.open()" class="button new"
-          >+ Nova Transação</a
+        <button 
+        class="button new"
+        type="button"
+        onclick="Modal.open()" 
         >
+        + Nova Transação
+        </button>
 
         <table id="date_table">
           <thead>
@@ -91,7 +95,7 @@
               />
             </div>
 
-            <div class="input-grup">
+            <div class="input-grup actions">
               <label class="sr-only" for="amount">Valor</label>
               <input
                 type="number"
@@ -126,6 +130,6 @@
       <p>Dev.Finance$</p>
     </footer>
 
-    <script src="./scripts.js" defer></script>
+    <script src="scripts.js" ></script>
   </body>
 </html>
