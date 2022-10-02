@@ -1,12 +1,33 @@
+
 :root {
-  --dark-blue: #363f5f;
-  --dark-very-blue: #00296b;
+  --dark-blue: #335bed;
+  --dark-very-blue: #0e3779;
+  --green: #49aa26;
+  --light-green: #3dd705;
+  --red: #e92929;
+  
+  --bg-header: #2D4A22; 
+  --bg-color: #f0f2f5;
+  
+  --font-color: #363f5f;
+  --link-hover:#00b4d8;
+  --link-color:#0096c7; 
+  --secondary-color: white;
+  
+  font-size: 62.5%;
 }
-/* Global */
-* {
+
+*,::after , ::before {  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+[data-theme=dark]{
+  --bg-header: #121214;
+  --bg-color:#202024;
+  --seconddary-color: #1c1c1c;
+  --font-color:white;
 }
 
 html{
@@ -14,14 +35,14 @@ html{
 }
 
 body {
-  background: #f0f2f5;
+  background: var(--bg-color);
   font-family: "Poppins", sans-serif;
 }
 
 .sr-only{
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: .1rem;
+  height: .1rem;
   padding: 0;
   margin: -1px;
   overflow: hidden;
@@ -34,7 +55,7 @@ body {
   width: min(90vw, 800px);
   margin: auto;
 }
-/* Titles */
+
 h2 {
   margin-top: 3.2rem;
   margin-bottom: 0.8rem;
@@ -42,14 +63,14 @@ h2 {
 
   font-weight: normal;
 }
-/* Links and buttons */
+
 a {
   text-decoration: none;
-  color: #0096c7;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #00b4d8;
+  color: var(--link-hover);
 }
 
 button{
@@ -59,14 +80,14 @@ button{
   border: none;
   border-radius: 0.25rem;
 
-  color: #FFF;
-  background-color: var(--dark-very-blue);
+  color: var(--secondary-color);
+  background-color: var(--green);
   
   cursor: pointer;
 }
 
 button:hover{
-  background:#00b4d8;
+  background:#53be2c;
   opacity: 1;
   transition: all 0.5s ease;
 
@@ -78,11 +99,11 @@ button:hover{
 }
 
 .button.cancel{
-  color: #e92929;
-  border: 2px solid #e92929;
+  color: var(--red);
+  border: 2px solid var(--red);
   border-radius: 0.25rem;
   
-  height: 50px;
+  height: 5rem;
   
   display: flex;
   justify-content: center;
@@ -96,34 +117,37 @@ button:hover{
   transition: all 0.5s ease;
 }
 
-/* HEADER */
+
 header {
-  background: var(--dark-very-blue);
-  padding: 2rem 0 10rem;
+  background: var(--green);
+  padding: 2rem 0 15rem;
   text-align: center;
 }
 
 #logo {
-  color: #fff;
+  color:var(--secondary-color);
   font-weight: 100;
 }
 
-/* MAIN - Balance */
 #balance {
   margin-top: -8rem;
 }
 
 #balance h2 {
-  color: #fff;
+  color: var(--secondary-color);
   margin-top: 0;
 }
-/* Cards */
+
 .card {
-  background: #fff;
+  background: var(--secondary-color);
   padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
-  color: var(--dark-blue);
+  margin-bottom: 1rem;  
   border-radius: 0.25rem;
+  transition:  transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .card h3 {
@@ -143,20 +167,21 @@ header {
 }
 
 .card.total {
-  background: #014f86;
+  background: var(--dark-blue);
   color: white;
 }
 
-/* MAIN - Transaction*/
+
 #transaction{
   display: block;
   width: 100%;
   overflow-x: auto;
 }
+
 #data-table {
   width: 100%;
   border-spacing: 0 0.5rem;
-  color: #00509d;
+  color: #0a0a0a;
 }
 
 table thead tr th:first-child,
@@ -170,36 +195,39 @@ table tbody tr td:last-child {
 }
 
 table thead th {
-  background: #fff;
+  background: var(--secondary-color);
   font-weight: normal;
   padding: 1rem 2rem;
   text-align: left;
 }
+
 table tbody td {
-  background: #fff;
+  background: var(--secondary-color);
   padding: 1rem 2rem;
 }
+
 table tr {
   opacity: 0.7;
 }
+
 table tbody tr:hover {
   opacity: 1;
   transition: all 0.5s ease;
 }
 
 td.description {
-  color: var(--dark-blue);
+  color:black;
 }
 
 td.income {
-  color: #12a454;
+  color: var(--green);
 }
 
 td.expense {
-  color: #e92929;
+  color: var(--red);
 }
 
-/* MODAL */
+
 .modal-overlay{
   width: 100%;
   height: 100%;
@@ -208,6 +236,7 @@ td.expense {
 
   position: fixed;
   top: 0;
+
 
   display: flex;
   justify-content: center;
@@ -225,14 +254,15 @@ td.expense {
 }
 
 .modal{
-  background-color: #F0F2f5;
+  background-color: var(--bg-color);
   padding: 2.4rem;
+  border-radius: 1rem;
 
   position: relative;
   z-index: 999;
 }
 
-/* FORM */
+
 #form{
   max-width: 500px;
 }
@@ -269,14 +299,15 @@ td.expense {
   
 }
 
-/* FOOTER */
+
 footer {
   text-align: center;
   padding: 4rem 0 2rem;
-  color: var(--dark-blue);
+  color: black;
 
   opacity: 0.6;
 }
+
 
 /* Responsive */
 @media (min-width: 800px){
