@@ -6,6 +6,6 @@ buttons.forEach(button => {
     document.querySelector('.box').classList.add('.rotate-scale-down-over');
     setTimeout(() => {
       document.querySelector('.box').classList.remove('.rotate-scale-down-over');
-    }, 650);
+    }, 700);
   })
 });
